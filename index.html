@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>riann</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
+</head>
+<body>
+    <div class="container2">
+        <div class="heart"></div>
+     <section>
+        <script>
+            function rain(){
+                let heart = document.querySelector('.heart');
+                let e = document.createElement('div');
+                e.classList.add('drop');
+                heart.appendChild(e)
+    
+                let left = Math.floor(Math.random() * 300);
+                let duration = Math.random() * 0.5;
+    
+                e.style.left = left + 'px';
+                e.style.animationDuration = 1+duration+'s';
+    
+                setTimeout(function(){
+                    heart.removeChild(e)
+                },5000)
+            }
+            setInterval(function(){
+                rain()
+            },50);
+        </script>
+      <div class="carrossel"><!--carrosel-de-fotos-->
+        <div class="container" id="img">
+            <img src="image/d226ff2e-8821-4904-a76e-79697dbd29ef.jpg" alt="">
+            <img src="image/c0173622-9062-48ea-8a33-b068c90cbe8a.jpg" alt="">
+            <img src="image/75ddb273-b2b0-42e8-b6c0-ccfef106e024.jpg" alt="">
+            <img src="image/d226ff2e-8821-4904-a76e-79697dbd29ef.jpg" alt="">
+            <img src="image/9736833F-9E0C-4C0F-81F2-DD0A6B2D5851.jpg" alt="">
+            <img src="image/2C80FAC7-62EA-4858-99BD-9EEC403657E7.jpg" alt="">
+            <img src="image/5F7424DE-D8EA-4059-AAFD-735CC3B8BE7D.jpg" alt="">
+        </div><!--carrosel-de-fotos-->
+      </div>
+
+    <section>
+        <div class="texto">
+            <h2>MEU AMOR POR VOCE!</h2>
+            <i class="bi bi-arrow-through-heart-fill"></i>
+        </div>
+    </section>
+
+    <section class="textarea">
+        <div class="declaracao">
+            <p>O tempo ao seu lado passa tão de pressa, que quando percebemos, nosso dia juntos já passou, nosso final de semana acabou, e temos que esperar dias para ficarmos colados de novo, e com isso temos que aproveitar cada segundo juntos, deixar brigas de lado, e aproveitar o momento, talvez seja difícil as vezes, mas é o certo. Eu penso que nessa vida, precisamos de uma pessoa ao lado, para estar nos momentos bons e ruins, nos dando suporte, amor, sendo verdadeiros companheiros para o resto da vida e cuidando um do outro, não sei o que o futuro espera de nos, mas que seja um final feliz, e que seja juntos. Que possamos construir o que tanto desejamos e falamos, e desfrutamos de todas as nossas conquistas juntos. Eu te amo muito meu amor, obrigado sempre pela paciência e pelo carinho, você é incrível e tudo na minha vida. </p>
+            <p>by: Seu namorado que <span>te ama muito!</span></p>
+        </div>
+    </section>
+</body>
+</html>
